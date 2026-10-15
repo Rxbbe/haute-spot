@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<title>Nieuwe aanvraag via hautespot.be</title>
+</head>
+<body style="margin:0;padding:0;background:#11233f;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Nieuwe aanvraag van {{naam}} via hautespot.be</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#11233f;">
+<tr><td align="center" style="padding:32px 16px;">
+
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+
+    <!-- logo -->
+    <tr><td align="center" style="padding:0 0 24px 0;">
+      <img src="https://hautespot.be/assets/img/logo.png" width="220" alt="Haute Spot Strategy" style="display:block;width:220px;max-width:100%;height:auto;border:0;border-radius:18px;">
+    </td></tr>
+
+    <!-- kaart -->
+    <tr><td style="background:#F6DBBA;border-radius:28px;padding:0;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+        <tr><td style="padding:36px 36px 8px 36px;font-family:Arial,Helvetica,sans-serif;">
+          <span style="display:inline-block;background:#FF914D;color:#11233f;font-size:12px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px;">Nieuwe aanvraag</span>
+          <h1 style="margin:16px 0 8px 0;font-size:28px;line-height:1.15;color:#1B365D;font-weight:bold;">{{naam}} wil een strategiegesprek</h1>
+          <p style="margin:0;font-size:15px;line-height:1.5;color:#4a5d7a;">Binnengekomen via het contactformulier op hautespot.be op {{tijdstip}}.</p>
+        </td></tr>
+
+        <!-- gegevens -->
+        <tr><td style="padding:24px 36px 8px 36px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:20px;font-family:Arial,Helvetica,sans-serif;">
+            <tr>
+              <td style="padding:18px 22px;border-bottom:1px solid #eef0f4;width:34%;font-size:13px;color:#6b7a93;text-transform:uppercase;letter-spacing:.05em;">Naam</td>
+              <td style="padding:18px 22px;border-bottom:1px solid #eef0f4;font-size:16px;color:#1B365D;font-weight:bold;">{{naam}}</td>
+            </tr>
+            <tr>
+              <td style="padding:18px 22px;border-bottom:1px solid #eef0f4;font-size:13px;color:#6b7a93;text-transform:uppercase;letter-spacing:.05em;">Telefoon</td>
+              <td style="padding:18px 22px;border-bottom:1px solid #eef0f4;font-size:16px;font-weight:bold;"><a href="tel:{{telefoon}}" style="color:#1B365D;text-decoration:none;">{{telefoon}}</a></td>
+            </tr>
+            <tr>
+              <td style="padding:18px 22px;font-size:13px;color:#6b7a93;text-transform:uppercase;letter-spacing:.05em;">E-mail</td>
+              <td style="padding:18px 22px;font-size:16px;font-weight:bold;"><a href="mailto:{{email}}" style="color:#1B365D;text-decoration:none;">{{email}}</a></td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- bericht -->
+        <tr><td style="padding:16px 36px 8px 36px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:20px;border-left:6px solid #FF90A0;font-family:Arial,Helvetica,sans-serif;">
+            <tr><td style="padding:20px 24px;">
+              <p style="margin:0 0 8px 0;font-size:13px;color:#6b7a93;text-transform:uppercase;letter-spacing:.05em;">Situatie en zaak</p>
+              <p style="margin:0;font-size:16px;line-height:1.6;color:#11233f;white-space:pre-line;">{{vraag}}</p>
+            </td></tr>
+          </table>
+        </td></tr>
+
+        <!-- knoppen -->
+        <tr><td style="padding:24px 36px 36px 36px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+            <td style="border-radius:999px;background:#FF914D;">
+              <a href="mailto:{{email}}?subject=Je%20aanvraag%20bij%20Haute%20Spot" style="display:inline-block;padding:14px 26px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#11233f;text-decoration:none;border-radius:999px;">Beantwoord per mail</a>
+            </td>
+            <td width="12"></td>
+            <td style="border-radius:999px;background:#1B365D;">
+              <a href="tel:{{telefoon}}" style="display:inline-block;padding:14px 26px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:999px;">Bel {{naam}}</a>
+            </td></tr>
+          </table>
+        </td></tr>
+
+      </table>
+    </td></tr>
+
+    <tr><td align="center" style="padding:24px 16px 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.6;color:#8fa0bb;">
+      Automatisch bericht van het contactformulier op hautespot.be<br>
+      Haute Spot &middot; Ophovenstraat 20, 3680 Neeroeteren
+    </td></tr>
+
+  </table>
+
+</td></tr>
+</table>
+</body>
+</html>
