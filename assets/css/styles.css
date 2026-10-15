@@ -234,3 +234,6 @@ footer{background:var(--navy-deep);padding:4rem 0 2.5rem;border-top:1px solid rg
 /* spamfilter */
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 #captcha{min-height:0;overflow:hidden}
+a.card{color:inherit;cursor:pointer}
+.card .more{transition:transform .4s}
+a.card:hover .more{transform:translateX(6px)}
