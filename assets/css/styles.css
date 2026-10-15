@@ -82,12 +82,12 @@ h1 em{font-style:normal;color:var(--orange)}
 .c-a{grid-column:span 2;grid-row:span 2;color:#fff}
 .c-a .bg{filter:grayscale(.5) contrast(1.1)}
 .c-a::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(17,35,63,.1),rgba(17,35,63,.92))}
-.c-b{grid-column:span 2;background:var(--pink);color:var(--navy-deep)}
-.c-c{background:var(--sage);color:var(--navy-deep)}
+.c-b{grid-column:span 2;background:var(--sand);color:var(--navy-deep)}
+.c-c{background:var(--sand);color:var(--navy-deep)}
 .c-d{background:var(--sand);color:var(--navy-deep)}
 .c-e{grid-column:span 3;background:var(--navy-deep);border:1px solid rgba(255,255,255,.14);color:#fff}
 .c-e .bg{opacity:.35;filter:grayscale(1);mix-blend-mode:luminosity}
-.c-f{background:var(--orange);color:var(--navy-deep)}
+.c-f{background:var(--sand);color:var(--navy-deep)}
 .card svg{position:absolute;top:1.6rem;left:1.8rem;width:34px;height:34px}
 @media(max-width:900px){
   .bento{grid-template-columns:repeat(2,1fr)}
