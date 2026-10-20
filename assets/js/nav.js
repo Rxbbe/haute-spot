@@ -10,5 +10,5 @@
   nav.querySelectorAll('.navlinks a').forEach(function(a){a.addEventListener('click',function(){set(false);});});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
   document.addEventListener('click',function(e){if(!nav.contains(e.target))set(false);});
-  window.addEventListener('resize',function(){if(window.innerWidth>820)set(false);});
+  window.addEventListener('resize',function(){if(window.innerWidth>1020)set(false);});
 })();
