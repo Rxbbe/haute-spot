@@ -155,6 +155,8 @@ h1 em{font-style:normal;color:var(--orange)}
   .slice{min-height:110px;flex:none;transition:min-height .7s}
   .slice.active{min-height:360px}
   .slice:not(.active) h3{writing-mode:horizontal-tb;transform:none}
+  .slice .tag{left:auto;right:1.4rem;top:1.2rem}
+  .slice h3{white-space:normal;padding-right:3.4rem}
 }
 
 /* action */
