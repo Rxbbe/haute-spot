@@ -111,7 +111,6 @@ if(window.gsap && window.ScrollTrigger){
   // pinned split + image scale and fade
   var mm=gsap.matchMedia();
   mm.add('(min-width: 901px)',function(){
-    ScrollTrigger.create({trigger:'.cases .split',start:'top 20%',end:'bottom bottom',pin:'#pinleft',pinSpacing:false});
     gsap.utils.toArray('.case').forEach(function(c){
       gsap.fromTo(c,{scale:.82},{scale:1,ease:'none',scrollTrigger:{trigger:c,start:'top 95%',end:'top 40%',scrub:true}});
       gsap.to(c,{opacity:.2,ease:'none',scrollTrigger:{trigger:c,start:'bottom 45%',end:'bottom 5%',scrub:true}});
@@ -122,4 +121,22 @@ if(window.gsap && window.ScrollTrigger){
       gsap.from(c,{y:50,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:c,start:'top 88%'}});
     });
   });
+
+  // terug naar de pagina: GSAP zet scrollherstel uit, dus herstel de positie zelf en bereken de scrubs opnieuw
+  var KEY='hs-scroll';
+  window.addEventListener('pagehide',function(){try{sessionStorage.setItem(KEY,String(window.scrollY))}catch(e){}});
+  function resync(){
+    var nav=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];
+    var y=0;
+    if(nav&&nav.type==='back_forward'){try{y=parseFloat(sessionStorage.getItem(KEY))||0}catch(e){}}
+    var root=document.documentElement;
+    root.style.scrollBehavior='auto';
+    window.scrollTo(0,0);
+    ScrollTrigger.refresh();
+    if(y)window.scrollTo(0,y);
+    ScrollTrigger.update();
+    root.style.scrollBehavior='';
+  }
+  window.addEventListener('pageshow',function(e){if(e.persisted)resync()});
+  window.addEventListener('load',function(){setTimeout(resync,100)});
 }
