@@ -62,6 +62,14 @@ nav .btn{padding:.7rem 1.4rem;font-size:.92rem;white-space:nowrap;flex:none}
 .orb.o2{width:380px;height:380px;background:var(--pink);opacity:.28;right:-100px;bottom:5%}
 h1{font-weight:700;letter-spacing:-.035em;line-height:1.04;font-size:clamp(2.8rem,6.2vw,6rem);max-width:72rem;margin-inline:auto}
 h1 em{font-style:normal;color:var(--orange)}
+.hero h1 em{color:var(--sand)}
+.hero .ctas .btn-orange{background:var(--sand);box-shadow:0 12px 40px -12px rgba(246,219,186,.5)}
+.hero .ctas .btn-orange:hover{background:#fbe6cc}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:3rem;align-items:center}
+.hero-grid h1{font-size:clamp(2.6rem,5vw,5rem)}
+.hero-photo{width:100%}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-photo{max-width:420px;margin:0 auto}}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;display:block;border:2px solid rgba(255,255,255,.25)}
 .pill{display:inline-block;width:clamp(4.5rem,9vw,8.5rem);height:.78em;border-radius:999px;vertical-align:middle;background-size:cover;background-position:center;margin-inline:.12em;transform:translateY(-.06em);border:2px solid rgba(255,255,255,.3)}
 .hero p.lead{max-width:44rem;margin:2.2rem auto 2.8rem;font-size:clamp(1.05rem,1.5vw,1.3rem);color:rgba(255,255,255,.78)}
 .ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
